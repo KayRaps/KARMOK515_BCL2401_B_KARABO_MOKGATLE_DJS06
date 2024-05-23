@@ -16,7 +16,7 @@ console.log(sortedProvinces);
 
 // Filter for filtering out provinces conataining "Cape"
 const provincesWithoutCape = provinces.filter(province => !province.includes('Cape'));
-const reaminingProvincesCount = provinceWithoutCape.length;
+const reaminingProvincesCount = provincesWithoutCape.length;
 console.log(reaminingProvincesCount);
 
 // A list of names:
