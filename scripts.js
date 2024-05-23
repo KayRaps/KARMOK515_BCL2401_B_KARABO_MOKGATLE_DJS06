@@ -1,9 +1,23 @@
 // A list of provinces:
 const provinces = ['Western Cape', 'Gauteng', 'Northern Cape', 'Eastern Cape', 'KwaZulu-Natal', 'Free State'];
 
+// Log each province to the console
+provinces.forEach(province => {
+  console.log(province);
+})
 // A list of names:
 const names = ['Ashwin', 'Sibongile', 'Jan-Hendrik', 'Sifso', 'Shailen', 'Frikkie']
 
+// Logging each name to the console
+names.forEach(name => {
+  console.log(name);
+})
+
+//Logging each name with its matching province
+names.forEach((name, index) => {
+  const province = provinces[index];
+  console.log(`${name} (${province})`);
+});
 // A list of products with prices:
 const products = [
   { product: 'banana', price: "2" },
