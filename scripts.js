@@ -58,9 +58,11 @@ const products = [
   { product: 'tea', price: '' },
 ];
 
-// Logging Products on the console
-products.forEach(product => console.log(product.product));
+//1. Logging Products on the console
+console.log(products.forEach(product => console.log(product.product)));
 
 // filtering by Name Length
-const filteredByNameLength = products.filter(product => product.length <= 5);
-console.log(filteredByNameLength);
+console.log(products.filter(product => product.length <= 5));
+
+
+//
