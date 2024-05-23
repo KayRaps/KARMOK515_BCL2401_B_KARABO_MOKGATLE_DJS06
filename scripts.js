@@ -62,7 +62,7 @@ const products = [
 console.log(products.forEach(product => console.log(product.product)));
 
 //2. filtering by Name Length
-console.log(products.filter(product => product.length <= 5));
+console.log(products.filter(product => product.product.length <= 5));
 
 
 //3. Price Manipulation
@@ -72,3 +72,4 @@ console.log(
   .map(product => ({ ...product, price: Number(product.price) }))
   .reduce((total, product) => total + product.price, 0)
 );
+
