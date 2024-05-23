@@ -90,3 +90,11 @@ console.log(
 
   })()
 );
+
+//6. Object Transformation
+console.log(
+  products.map(product => {
+    const { product: name, price: cost } = product;
+    return { name, cost };
+  })
+);
