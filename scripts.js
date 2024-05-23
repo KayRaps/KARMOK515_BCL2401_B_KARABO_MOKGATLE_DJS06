@@ -60,3 +60,7 @@ const products = [
 
 // Logging Products on the console
 products.forEach(product => console.log(product.product));
+
+// filtering by Name Length
+const filteredByNameLength = products.filter(product => product.length <= 5);
+console.log(filteredByNameLength);
