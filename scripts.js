@@ -61,8 +61,14 @@ const products = [
 //1. Logging Products on the console
 console.log(products.forEach(product => console.log(product.product)));
 
-// filtering by Name Length
+//2. filtering by Name Length
 console.log(products.filter(product => product.length <= 5));
 
 
-//
+//3. Price Manipulation
+console.log(
+  products
+  .filter(product => product.price && product.price.toString().trim() !== '')
+  .map(product => ({ ...product, price: Number(product.price) }))
+  .reduce((total, product) => total + product.price, 0)
+);
