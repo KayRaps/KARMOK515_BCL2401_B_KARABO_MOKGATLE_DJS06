@@ -56,4 +56,7 @@ const products = [
   { product: 'avocado', price: "8" },
   { product: 'coffee', price: 10 },
   { product: 'tea', price: '' },
-]
+];
+
+// Logging Products on the console
+products.forEach(product => console.log(product.product));
