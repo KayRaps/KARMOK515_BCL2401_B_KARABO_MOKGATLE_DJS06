@@ -5,8 +5,12 @@ const provinces = ['Western Cape', 'Gauteng', 'Northern Cape', 'Eastern Cape', '
 provinces.forEach(province => {
   console.log(province);
 })
+
+// Array with province names in all uppercase
+const provinceUppercase = provinces.map(province => province.toUpperCase());
+console.log(provinceUppercase);
 // A list of names:
-const names = ['Ashwin', 'Sibongile', 'Jan-Hendrik', 'Sifso', 'Shailen', 'Frikkie']
+const names = ['Ashwin', 'Sibongile', 'Jan-Hendrik', 'Sifso', 'Shailen', 'Frikkie'];
 
 // Logging each name to the console
 names.forEach(name => {
