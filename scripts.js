@@ -10,6 +10,10 @@ provinces.forEach(province => {
 const provinceUppercase = provinces.map(province => province.toUpperCase());
 console.log(provinceUppercase);
 
+// Sort the provinces alphabetically
+const sortedProvinces = provinces.sort();
+console.log(sortedProvinces);
+
 // A list of names:
 const names = ['Ashwin', 'Sibongile', 'Jan-Hendrik', 'Sifso', 'Shailen', 'Frikkie'];
 
