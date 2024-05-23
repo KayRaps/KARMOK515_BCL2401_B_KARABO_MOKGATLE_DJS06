@@ -42,6 +42,12 @@ console.log(nameLengths);
 const containsS = names.map(name => name.toLowerCase().includes('s'));
 console.log(containsS);
 
+// Use reduce to create an object mapping names to their respective provinces
+const nameProvinceMapping = names.reduce((acc, name, index) => {
+  acc[name] = provinces[index];
+  return acc;
+}, {});
+
 // A list of products with prices:
 const products = [
   { product: 'banana', price: "2" },
