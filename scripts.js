@@ -19,6 +19,7 @@ const provincesWithoutCape = provinces.filter(province => !province.includes('Ca
 const reaminingProvincesCount = provincesWithoutCape.length;
 console.log(reaminingProvincesCount);
 
+
 // A list of names:
 const names = ['Ashwin', 'Sibongile', 'Jan-Hendrik', 'Sifso', 'Shailen', 'Frikkie'];
 
@@ -36,6 +37,10 @@ names.forEach((name, index) => {
 // array with the length of each name
 const nameLengths = names.map(name => name.length);
 console.log(nameLengths);
+
+// Boolean array indicating whether each name contains the letter 'S'
+const containsS = names.map(name => name.toLowerCase().includes('s'));
+console.log(containsS);
 
 // A list of products with prices:
 const products = [
