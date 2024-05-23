@@ -75,3 +75,18 @@ console.log(
 
 //4. Concatenate Product Names
 console.log(products.reduce((acc, product) => acc + product.product, ''));
+
+//5. Find Extemes in Prices
+console.log(
+  (() => {
+    const pricesArray = products
+    .filter(product => product.price && product.price.toString().trim() !== '')
+    .map(product => Number(product.price));
+
+    const highestPrice = Math.max(...pricesArray);
+    const lowestPrice = Math.min(...pricesArray);
+
+    return `Highest: ${highestPrice}. Lowest: ${lowestPrice}.`;
+
+  })()
+);
