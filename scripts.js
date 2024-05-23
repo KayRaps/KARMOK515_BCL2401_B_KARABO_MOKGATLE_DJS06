@@ -14,6 +14,11 @@ console.log(provinceUppercase);
 const sortedProvinces = provinces.sort();
 console.log(sortedProvinces);
 
+// Filter for filtering out provinces conataining "Cape"
+const provincesWithoutCape = provinces.filter(province => !province.includes('Cape'));
+const reaminingProvincesCount = provinceWithoutCape.length;
+console.log(reaminingProvincesCount);
+
 // A list of names:
 const names = ['Ashwin', 'Sibongile', 'Jan-Hendrik', 'Sifso', 'Shailen', 'Frikkie'];
 
