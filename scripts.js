@@ -84,8 +84,9 @@ console.log(
     .map(product => Number(product.price));
 
     const highestPrice = Math.max(...pricesArray);
-    const lowestPrice = Math.min(...pricesarray);
+    const lowestPrice = Math.min(...pricesArray);
 
     return `highest: ${highestPrice}. Lowest: ${lowestPrice}.`;
   })()
 );
+
